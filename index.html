@@ -1,47 +1,3 @@
-<!-- <?html
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'phpmailer/src/Exception.html';
-require 'phpmailer/src/PHPMailer.html';
-require 'phpmailer/src/SMTP.html';
-
-  if(isset($_POST["enviarMensagem"])){
-    $email = $_POST['email'];
-    $name = $_POST['name'];
-    $message = $_POST['message'];
-
-    $mail = new PHPMailer(true);
-    
-        $mail->isSMTP();
-        $mail->CharSet = "utf-8";
-        $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'tls';
-    
-        $mail->Host = 'smtp.gmail.com';
-        $mail->Port = 587;
-        $mail->SMTPOptions = array(
-            'ssl' => array(
-                'verify_peer' => false,
-                'verify_peer_name' => false,
-                'allow_self_signed' => true
-            )
-        );
-        $mail->isHTML(true);
-    
-        $mail->Username = 'thi.canato@gmail.com';
-        $mail->Password = 'obzfdkkaekvsvdzk';
-        $mail->Subject = "Mensagem Portfólio" ;
-        $mail->MsgHTML("Email: " . $email."<br> Nome: " . $name . " <br> Mensagem: " . $message);
-        $mail->addAddress("thi.canato@gmail.com");
-    
-        $mail->send();
-        echo  "<script>alert('Email enviado com Sucesso!');</script>";
-
-  }
-?> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -190,13 +146,13 @@ require 'phpmailer/src/SMTP.html';
                 <div class="cases__list js-owl" data-items-mobile-portrait="1" data-items-mobile-album="1" data-autoheight><a class="cases__item" data-aos="animation-translate-y" data-aos-delay="" href="ArtigoTeste.pdf">
                   <div class="cases__body">
                     <h4 class="cases__info h4">Artigo</h4>
-                    <div class="cases__text">Artigo Publicado no Conic em 2022 <br>*Os dados apresentados são fictícios.  
+                    <div class="cases__text">Artigo Publicado no Conic em 2022 <br>  
                     </div>
                   </div>
                 </a><a class="cases__item" data-aos="animation-translate-y" data-aos-delay="200" href="DR GOOD.pptx.pdf">
                   <div class="cases__body">
                     <h4 class="cases__info h4">Relatórios</h4>
-                    <div class="cases__text">Campanha DR Good - Report campanhas </div>
+                    <div class="cases__text">Campanha DR Good - Report campanhas<br>*Os dados apresentados são fictícios. </div>
                   </div>
                   <br>
               </a><br></div>
