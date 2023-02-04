@@ -6055,4 +6055,8 @@ body:not(.touch-device) .owl-item:hover .details__preview {
   margin-top:3em;
 }
 
+#tituloMotivacional{
+  font-size: 8vw;
+}
+
 /*# sourceMappingURL=app.css.map */
